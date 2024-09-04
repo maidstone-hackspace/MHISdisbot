@@ -64,9 +64,17 @@ async def on_message(message):
         #print('hello world')
         
         
-    if message.content.startswith('$ping'):
+    if message.content.startswith('!ping'):
         await message.channel.send('Pong')
         print('pong')
+        
+    if message.content.startswith('!repo'):
+        await message.channel.send('https://github.com/maidstone-hackspace/MHISdisbot')
+        print('repo')
 
-
+    if message.content.startswith('!help'):
+        await message.channel.send('command list')
+        await message.channel.send('test if the bot is active = !ping')
+        await message.channel.send('link to the github repo = !repo')
+        print('command list')
 client.run(TOKEN)
