@@ -12,8 +12,12 @@ This is the Bot module of the Maidstone hackspace infomation system , it will co
 [PyYAML](https://pypi.org/project/PyYAML/) (Latest)
 
 
-todo:
+**todo:**
+
 mqtt 
+
 fancy embeds
+
 make it run as a container (also so the container code can be used to make templates for other mods module)
-change the discord token to a secret/enviromental variable
+
+change the discord token to a secret/enviromental variable imported to the container 
