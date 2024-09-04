@@ -4,6 +4,7 @@ This is the Bot module of the Maidstone hackspace infomation system , it will co
  
 
 **Dependancies:**
+
 [[Python 3.12.5]](https://www.python.org/downloads/release/python-3125/) (Latest)
 
 [Discord.py](https://pypi.org/project/discord.py/) (Latest)
