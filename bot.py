@@ -6,20 +6,52 @@ print('imports complete')
 
 #read and import the config file
 config = configparser.ConfigParser()
-config.read('secretconfig.ini')
-TOKEN = config['config.variables']['discordbottoken']
+config.read('config.ini')
+TOKEN = config['bot']['discordbottoken']
 
-print(TOKEN)
-
+#configure the bot
 intents = discord.Intents.default()
-intents.message_content = True
+intents.messages = True
+
+
+#print(TOKEN)
 
 client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
-    print(f'We have logged in as {client.user}')
-
+    print('                     .:-===+++++++==-:.                     ')
+    print('                .-=++++++++++++++++++++++=-:                ')
+    print('             :=++++++++++++++++++++++++++++++=-.            ')   
+    print('          .=++++++++++++++++++++++++++++++++++++=:          ')
+    print('        .=+++++++++++++++++++::=++++++++++++++++++=:        ')
+    print('      .=++++++++++++++++++=:    .=+++++++++++++++++++:      ')
+    print('     -+++++++++++++++++++:        .=++++++++++++++++++-     ')
+    print('    -++++++++++++++++++:            -++++++++++++++++++=    ')
+    print('   =++++++++++++++++=:              :=+++++++++++++++++++   ')
+    print('  =+++++++++++++++++:                 :++++++++++++++++++=  ')
+    print(' :+++++++++++++++: :==:                 :+++++++++++++++++= ')
+    print(' +++++++++++++=:     :=+:   ..            :===+++++++++++++.')
+    print('-++++++++++++:         :++:=+-                .=+++++++++++-')
+    print('=++++++++++:            .++-.                   :=+++++++++=')
+    print('++++++++=:             :+-                        .=++++++++')
+    print('++++++++=.                         -:             .=++++++++')
+    print('=+++++++++=.                    .-+:            .-++++++++++')
+    print('-+++++++++++=:                .-=:=+:         .=+++++++++++-')   
+    print(' +++++++++++++==+:             :   :++:     .=+++++++++++++.')
+    print(' :++++++++++++++++=:                 :==: .-++++++++++++++= ')
+    print('  =++++++++++++++++++:                 :++++++++++++++++++  ')
+    print('   ++++++++++++++++++++:              .=+++++++++++++++++.  ')
+    print('    =++++++++++++++++++=            .-++++++++++++++++++.   ')
+    print('     -++++++++++++++++++=:        .=++++++++++++++++++-     ')
+    print('      .=++++++++++++++++++=.    .=+++++++++++++++++++:      ')
+    print('        :+++++++++++++++++++=..-+++++++++++++++++++-        ')
+    print('          :=++++++++++++++++++++++++++++++++++++=:          ')
+    print('            .-=+++++++++++++++++++++++++++++++-.            ')
+    print('               .:-++++++++++++++++++++++++-:.               ')
+    print('                    .::-==++++++++==--:.                    ')
+    print(f'logged in as {client.user}')
+    print('MHISdisbot is online')
 @client.event
 async def on_message(message):
     if message.author == client.user:
