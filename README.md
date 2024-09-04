@@ -10,7 +10,6 @@ This is the Bot module of the Maidstone hackspace infomation system , it will co
 
 [Discord.py](https://pypi.org/project/discord.py/) (Latest)
 
-[PyYAML](https://pypi.org/project/PyYAML/) (Latest)
 
 **Todo:**
 
