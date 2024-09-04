@@ -20,4 +20,4 @@ fancy embeds
 
 make it run as a container (also so the container code can be used to make templates for other mods module)
 
-change the discord token to a secret/enviromental variable imported to the container 
+change the discord token to a secret/enviromental variable imported to the container instead of a local file that is just gitignore'ed
