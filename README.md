@@ -15,6 +15,8 @@ This is the Bot module of the Maidstone hackspace infomation system , it will co
 
 mqtt 
 
+write some pytest scripts
+
 fancy embeds
 
 make it run as a container (also so the container code can be used to make templates for other mods module)
