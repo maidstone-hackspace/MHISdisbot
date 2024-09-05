@@ -68,13 +68,22 @@ async def on_message(message):
         await message.channel.send('Pong')
         print('pong')
         
-    if message.content.startswith('!repo'):
+    if message.content.startswith('!disrepo'):
+        await message.channel.send('https://github.com/maidstone-hackspace/MHISdisbot')
+        print('disrepo')
+
+    if message.content.startswith('!meshrepo'):
+        await message.channel.send('https://github.com/maidstone-hackspace/MHISmeshbot')
+        print('meshrepo')
+    
+    if message.content.startswith('!meshrepo'):
         await message.channel.send('https://github.com/maidstone-hackspace/MHISdisbot')
         print('repo')
 
     if message.content.startswith('!help'):
         await message.channel.send('command list')
         await message.channel.send('test if the bot is active = !ping')
-        await message.channel.send('link to the github repo = !repo')
+        await message.channel.send('link to the discord bot github repo = !disrepo')
+        await message.channel.send('link to the Meshtastic bot github repo = !meshrepo')
         print('command list')
 client.run(TOKEN)
