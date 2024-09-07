@@ -52,6 +52,7 @@ async def on_ready():
     print('                    .::-==++++++++==--:.                    ')
     print(f'logged in as {client.user}')
     print('MHISdisbot is online')
+
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -75,10 +76,6 @@ async def on_message(message):
     if message.content.startswith('!meshrepo'):
         await message.channel.send('https://github.com/maidstone-hackspace/MHISmeshbot')
         print('meshrepo')
-    
-    if message.content.startswith('!meshrepo'):
-        await message.channel.send('https://github.com/maidstone-hackspace/MHISdisbot')
-        print('repo')
 
     if message.content.startswith('!help'):
         await message.channel.send('command list')
@@ -86,4 +83,5 @@ async def on_message(message):
         await message.channel.send('link to the discord bot github repo = !disrepo')
         await message.channel.send('link to the Meshtastic bot github repo = !meshrepo')
         print('command list')
+
 client.run(TOKEN)
